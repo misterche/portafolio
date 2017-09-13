@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html'
+  selector: 'app-item',
+  templateUrl: './item.component.html'
 })
-export class AboutComponent{
+export class ItemComponent  {
 
   constructor() { }
 
