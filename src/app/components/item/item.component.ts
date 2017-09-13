@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router'
 
 @Component({
   selector: 'app-item',
@@ -6,7 +7,12 @@ import { Component } from '@angular/core';
 })
 export class ItemComponent  {
 
-  constructor() { }
+  constructor( private _ar:ActivatedRoute) {
+
+  	_ar.params.subscribe( parametros =>{
+  		console.log(parametros['id'])
+  	})
+   }
 
   ngOnInit() {
   }
