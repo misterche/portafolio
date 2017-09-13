@@ -6,10 +6,11 @@ export class InfoService {
 	info:any={}
 	loading:boolean=false
 	about:any[]=[]
+
    	constructor( private http:Http) { 
   	this.carga_info()
   	this.carga_about()
-  }
+ 	 }
 
   public carga_info(){
   	this.http.get("assets/data/info.data.js").subscribe( info =>{
