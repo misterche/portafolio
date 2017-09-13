@@ -22,7 +22,7 @@ export class InfoService {
 
   public carga_about(){
   	this.http.get("https://babyshop-d1bda.firebaseio.com/Equipo.json").subscribe( info =>{
-  			console.log(info.json())
+  			// console.log(info.json())
   			this.loading = true
   			this.about = info.json()
   	})
