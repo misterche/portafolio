@@ -10,12 +10,12 @@ export class SearchComponent  {
 
 	termino:string=undefined
 
-  constructor( private _ar:ActivatedRoute, private _ps:ProductosService) { 
+  constructor( private _ar:ActivatedRoute, public _ps:ProductosService) { 
   		
   		_ar.params.subscribe( parametros=>{
 
   			this.termino=parametros['termino']
-        
+
   			// console.log(this.termino)
 
         _ps.buscar_producto(this.termino)

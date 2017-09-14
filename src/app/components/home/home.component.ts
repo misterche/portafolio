@@ -7,6 +7,6 @@ import { ProductosService } from '../../services/productos/productos.service'
 })
 export class HomeComponent  {
 
-	constructor( private _ps:ProductosService){}
+	constructor( public _ps:ProductosService){}
 
 }
