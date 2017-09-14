@@ -9,10 +9,10 @@ import { Router} from '@angular/router'
 })
 export class HeaderComponent {
 
-  constructor( public _is:InfoService, public _ar:Router) { }
+  constructor( public _is:InfoService, private _ar:Router) { }
 
 	buscar_termino( termino:string){
-		console.log(termino)
+		// console.log(termino)
 		this._ar.navigate(['search', termino])
 	}
 }

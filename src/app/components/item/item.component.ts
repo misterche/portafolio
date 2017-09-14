@@ -15,7 +15,7 @@ export class ItemComponent  {
   	_ar.params.subscribe( parametros =>{
   		_ps.carga_total_pro( parametros['id'] ).subscribe( res =>{this.cod=parametros['id'], this.producto = res.json()
 
-  			console.log(res.json())
+  			// console.log(res.json())
   		})
   	})
    }
